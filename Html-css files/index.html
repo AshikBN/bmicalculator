@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>github.com/ashikBN/bmicalculator</title>
+</head>
+<body>
+    <div class="container">
+        <label for="age">age</label>
+        <input class="age" name="age" type="number" onkeyup="alert()" /><span>ages:2-120</span>
+        <br/>
+        <br/>
+        <label for="gender">Gender</label>
+        <input type="radio" />Male
+        <input type="radio" /> Female
+        <br/>
+        <br />
+        <label for="height">Height</label>
+        <input class="height" name="height" type="text" onkeyup="checkH()" />
+        <span class="halert">Positive Values Only!</span>
+        <br/>
+        <br />
+        <label for="weight">Weight</label>
+        <input class="weight" name="weight" type="text"  onkeyup="checkW()"/>
+        <span class="walert" >Positive Values Only!</span>
+        <br/>
+        <br />
+        <button class="calculate" onclick="calculate('calculate')" >Calculate</button>
+        <button  class="clear" onclick="calculate('clear')" class="clear">Clear</button>
+    </div>
+    <div class="result">
+        <div>
+            Result:
+        </div>
+        <br/>
+        
+        <span>BMI=</span><span class="bmi"></span>
+        
+    </div>
+    <span class="age-alert">Please enter the age between 2 and 120</span>
+    
+    <script src="../Javascript file/index.js"></script>
+</body>
+
+</html>
